@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message reminder</title>
+</head>
+<style>
+
+.p{
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+    padding-top: 10;
+}
+.k{
+  text-align: center;
+  border: 5px outset black;
+  background-color: yellowgreen;
+}
+
+
+</style>
+<body>
+  <div class ="k">Welcome To Message Reminder</div>
+  <div class="p">
+   <form action="/predict" method="post">
+    <input type="text" id="mss" name="mss" required>
+    <input type="submit" value="Predict">
+   </form>
+    <div class="prediction_text"id="prediction_text">
+        <!-- The prediction result will be displayed here -->
+        {{ prediction_text }}
+    </div>
+  </div>
+</body>
+</html>
